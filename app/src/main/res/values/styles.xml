@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowMenuStyle">@style/toolbarMenuStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+    </style>
+
+    <style name="ChatActivityTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <!--自定义toolbar菜单样式-->
+    <style name="toolbarMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/toolbar_background</item>
+        <!-- 弹出层垂直方向上的偏移，负值会覆盖toolbar -->
+        <item name="android:dropDownVerticalOffset">3dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-2dp</item>
+        <!--文字颜色-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--三点按钮-->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@mipmap/more</item>
+    </style>
+
+    <!--气泡图片的-->
+    <declare-styleable name="bubble">
+        <attr name="bubbleDirection">
+            <enum name="left" value="0"></enum>
+            <enum name="top" value="1"></enum>
+            <enum name="right" value="2"></enum>
+            <enum name="bottom" value="3"></enum>
+        </attr>
+        <attr name="bubbleArrowWidth" format="dimension" />
+        <attr name="bubbleArrowHeight" format="dimension" />
+        <attr name="bubbleArrowWhetherCenterVertical" format="boolean" />
+        <attr name="bubbleRadius" format="dimension" />
+        <attr name="bubbleMarginTop" format="dimension" />
+        <attr name="bubbleMarginLeft" format="dimension" />
+        <attr name="bubbleStrokeWidth" format="dimension" />
+        <attr name="bubbleStrokeColor" format="color" />
+        <attr name="bubbleBackGround" format="color" />
+    </declare-styleable>
+</resources>

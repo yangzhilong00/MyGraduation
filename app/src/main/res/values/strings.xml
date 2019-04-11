@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="ToolBar_Search">搜索</string>
+    <string name="ToolBar_GroupChat">发起群聊</string>
+    <string name="ToolBar_AddFriend">添加好友</string>
+    <string name="ToolBar_Scan">扫一扫</string>
+    <string name="ToolBar_Suggest">意见反馈</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

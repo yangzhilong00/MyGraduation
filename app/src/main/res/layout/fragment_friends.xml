@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.mygraduation.MyFragment.FriendsFragment">
+
+    <RelativeLayout
+        android:id="@+id/button_newfriend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <ImageView
+            android:id="@+id/image_newfriend"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/newfriend"
+            />
+        <TextView
+            android:id="@+id/tv_newfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_newfriend"
+            android:text="新的朋友"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/iv_new"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/new_mark"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_newfriend"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_groupchat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/image_groupchat"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/groupchat2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_groupchat"
+            android:text="群聊"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        android:layout_weight="1.5"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_friends"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
